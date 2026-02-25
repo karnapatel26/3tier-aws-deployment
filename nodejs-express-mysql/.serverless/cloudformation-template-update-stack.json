@@ -162,7 +162,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/tutorial-api/dev/1771962847957-2026-02-24T19:54:07.957Z/tutorial-api.zip"
+          "S3Key": "serverless/tutorial-api/dev/1772002477463-2026-02-25T06:54:37.463Z/tutorial-api.zip"
         },
         "Handler": "server.handler",
         "Runtime": "nodejs18.x",
@@ -180,14 +180,14 @@
         "AppLogGroup"
       ]
     },
-    "AppLambdaVersionhZCNQpfWxaTQvtXYjfraL46OwkO7dreVZvGT0e0CY": {
+    "AppLambdaVersiondz3uNndUvqpwUgV9NcvBEDZIVRxWCQhWXusZ0wsKVs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "arHK+My7qBMsLcEgxoniIWAEvBPuvMouo1RBhCpxCQ8="
+        "CodeSha256": "KNZ/x+Plc4Vrvmb8lSThHac/Z65Ijz9pqntx4Z17peY="
       }
     },
     "HttpApi": {
@@ -298,7 +298,7 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersionhZCNQpfWxaTQvtXYjfraL46OwkO7dreVZvGT0e0CY"
+        "Ref": "AppLambdaVersiondz3uNndUvqpwUgV9NcvBEDZIVRxWCQhWXusZ0wsKVs"
       },
       "Export": {
         "Name": "sls-tutorial-api-dev-AppLambdaFunctionQualifiedArn"
