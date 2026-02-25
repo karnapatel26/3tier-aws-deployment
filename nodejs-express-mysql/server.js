@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to karna's application." });
+  res.json({ message: "GITHUB ACTIONS DEPLOY SUCCESS" });
 });
 
 require("./app/routes/tutorial.routes.js")(app);
